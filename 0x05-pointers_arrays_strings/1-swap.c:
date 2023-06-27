@@ -1,0 +1,19 @@
+wap.c:9:6: error: ‘a’ redeclared as different kind of symbol
+    9 |  int a;
+      |      ^
+1-swap.c:7:20: note: previous definition of ‘a’ was here
+    7 | void swap_int(int *a, int *b)
+      |               ~~~~~^
+1-swap.c:11:2: error: ‘n’ undeclared (first use in this function)
+   11 |  n = *a;
+      |  ^
+1-swap.c:11:2: note: each undeclared identifier is reported only once for each function it appears in
+1-swap.c:11:6: error: invalid type argument of unary ‘*’ (have ‘int’)
+   11 |  n = *a;
+      |      ^~
+1-swap.c:12:2: error: invalid type argument of unary ‘*’ (have ‘int’)
+   12 |  *a = *b;
+      |  ^~
+1-swap.c:13:7: error: ‘m’ undeclared (first use in this function)
+   13 |  *b = m;
+      |       ^
